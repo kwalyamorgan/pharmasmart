@@ -4,167 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaSmart – Pharmacy Management Solution</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#00d4ff',
+                        'dark-bg': '#121212',
+                        'dark-card': '#1e1e1e',
+                        'dark-border': '#2a2a2a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2k4tF/A3Xw7x6E/f21wK1zH+g2L6I9t2z1t9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background: linear-gradient(120deg, #0a0a0a, #1e1e1e);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 2px solid #00d4ff;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            color: #00d4ff;
-        }
-        header p {
-            font-size: 1.1rem;
-            color: #ccc;
-        }
-        .btn {
-            background: #00d4ff;
-            color: #000;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-            display: inline-block;
-            margin-top: 15px;
-        }
-        .btn:hover {
-            background: #00aacc;
-        }
-        section {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        .feature {
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            border: 1px solid #2a2a2a;
-            transition: transform 0.3s ease, border 0.3s ease;
-        }
-        .feature:hover {
-            transform: translateY(-5px);
-            border-color: #00d4ff;
-        }
-        .feature img {
-            width: 50px; /* Reduced image size */
-            margin-bottom: 15px;
-        }
-        .screenshots img {
-            width: 70%; /* Reduced screenshot size */
-            max-width: 400px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            border: 1px solid #2a2a2a;
-        }
-        footer {
-            background: #0a0a0a;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            border-top: 2px solid #00d4ff;
-        }
-        h2 {
-            text-align: center;
-            color: #00d4ff;
-            margin-bottom: 30px;
-        }
-        .center-btn {
-            text-align: center;
-            margin-top: 30px;
-        }
-        /* WhatsApp Button at Bottom */
-        .whatsapp-bottom {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            background: #07b265;
-            color: #fff !important;
-            padding: 12px 18px;
-            border-radius: 50%;
-            font-size: 24px;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-        .whatsapp-bottom:hover {
-            background: #1ebc57;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
+<body class="bg-dark-bg text-gray-200">
 
     <!-- Hero Section -->
-    <header>
-        <h1>PharmaSmart</h1>
-        <p>Efficient, Reliable, and Compliant Pharmacy Management System</p>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1gkQgaFx8JIMG0JSEeWAD21cV5vVK1rHq&export=download" 
-           class="btn" download>📥 Download App</a>
-        <a href="pharmasmart.pdf" class="btn" download>📄 Download User Manual</a>
+    <header class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 px-4 text-center border-b-2 border-primary-blue shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-primary-blue leading-tight mb-4 animate-fade-in-down">
+                PharmaSmart
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-gray-300 mb-8 animate-fade-in-up">
+                The all-in-one pharmacy management solution for compliance and efficiency.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://drive.usercontent.google.com/u/0/uc?id=1gkQgaFx8JIMG0JSEeWAD21cV5vVK1rHq&export=download" 
+                   class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90" 
+                   download>
+                   <i class="fas fa-download mr-2"></i> Download App
+                </a>
+                <a href="pharmasmart.pdf" 
+                   class="btn bg-gray-700 text-white px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-600" 
+                   download>
+                   <i class="far fa-file-alt mr-2"></i> User Manual
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Features Section -->
-    <section>
-        <h2>Why Choose PharmaSmart?</h2>
-        <div class="features">
-            <div class="feature">
-                <img src="icon.png" alt="Inventory Icon">
-                <h3>Smart Inventory</h3>
-                <p>Real-time stock updates with automated low-stock alerts.</p>
-            </div>
-            <div class="feature">
-                <img src="https://img.icons8.com/fluency/96/sell.png" alt="Sales Icon">
-                <h3>Seamless Sales</h3>
-                <p>Fast POS transactions with category-based reporting.</p>
-            </div>
-            <div class="feature">
-                <img src="https://img.icons8.com/fluency/96/administrator-male.png" alt="Admin Icon">
-                <h3>Admin Control</h3>
-                <p>Manage users, reset passwords, and backup data securely.</p>
-            </div>
-            <div class="feature">
-                <img src="https://img.icons8.com/fluency/96/report-card.png" alt="DDA Icon">
-                <h3>DDA Compliance</h3>
-                <p>Generate legally compliant DDA registers in one click.</p>
+    <section id="features" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-12">
+                Powerful Features to Streamline Your Pharmacy
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature Card 1 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cubes text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Smart Inventory Management</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Keep track of every item in real-time. Automatically generate **once-daily alerts** for low stock and expiring drugs, so you never miss a critical detail.
+                    </p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cash-register text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Efficient Point of Sale (POS)</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Process sales quickly and accurately. The system automatically records patient and prescription details, ensuring a seamless and compliant checkout process.
+                    </p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-file-invoice text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Automated Compliance Reporting</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Generate official, printable **PDF reports for DDA, OTC, and Prescription-Only drugs** with a single click, saving you hours on manual paperwork and ensuring regulatory compliance.
+                    </p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-lock text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Secure User & Data Management</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Take full control with a dedicated admin panel. Manage users and passwords, and use the built-in **backup and restore** feature to protect your valuable data.
+                    </p>
+                </div>
+
+                <!-- Feature Card 5 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-truck text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Vendor & Supplier Tracking</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Easily add, edit, and manage all your vendor information in one place. Streamline your supply chain and maintain clear records of your business partners.
+                    </p>
+                </div>
+
+                <!-- Feature Card 6 -->
+                <div class="bg-dark-card p-6 md:p-8 rounded-xl shadow-lg border border-dark-border transform transition duration-300 hover:shadow-xl hover:border-primary-blue">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-history text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Comprehensive Deletion Logs</h3>
+                    <p class="text-sm text-gray-400 text-center">
+                        Maintain a complete and transparent history of all deleted records with a permanent log. This ensures accountability and provides a clear audit trail for any changes.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Screenshots Section -->
-    <section class="screenshots">
-        <h2>App Screenshots</h2>
-        <img src="a.jpg" alt="Login Screen">
-        <img src="b.jpg" alt="Inventory">
-        <img src="c.jpg" alt="Sales">
-        <img src="d.jpg" alt="Admin">
-        <img src="e.jpg" alt="DDA Register">
+    <section id="screenshots" class="bg-gray-900 py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-12">
+                See PharmaSmart in Action
+            </h2>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
+  }
+  .card-img:hover {
+    transform: translateY(-5px);
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  @media (prefers-color-scheme: dark) {
+    .card-img {
+      border: 1px solid #444;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    .image-container p {
+      color: #ccc;
+    }
+  }
+</style>
+
+<div class="grid">
+  <div class="image-container">
+    <img src="a.jpg" alt="PharmaSmart Login Screen" class="card-img">
+    <p>PharmaSmart Login Screen</p>
+  </div>
+  <div class="image-container">
+    <img src="b.jpg" alt="Inventory Management Dashboard" class="card-img">
+    <p>Inventory Management Dashboard</p>
+  </div>
+  <div class="image-container">
+    <img src="c.jpg" alt="Sales and Reporting" class="card-img">
+    <p>Sales and Reporting</p>
+  </div>
+  <div class="image-container">
+    <img src="d.jpg" alt="Admin Control Panel" class="card-img">
+    <p>Admin Control Panel</p>
+  </div>
+  <div class="image-container">
+    <img src="e.jpg" alt="DDA Register PDF Report" class="card-img">
+    <p>DDA Register PDF Report</p>
+  </div>
+  <div class="image-container">
+    <img src="f.jpg" alt="Low Stock Alerts" class="card-img">
+    <p>Low Stock Alerts</p>
+  </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Revolutionize Your Pharmacy?</h2>
+        <p class="text-gray-400 text-lg mb-8">
+            Download PharmaSmart today and take the first step towards a more efficient and compliant pharmacy.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="https://drive.usercontent.google.com/u/0/uc?id=1gkQgaFx8JIMG0JSEeWAD21cV5vVK1rHq&export=download" 
+               class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90" 
+               download>
+               <i class="fas fa-download mr-2"></i> Download App Now
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-gray-900 text-gray-400 text-center py-6">
         &copy; 2025 PharmaSmart. All rights reserved.
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/254748052811" class="whatsapp-bottom" title="Chat with us on WhatsApp">💬</a>
+    <a href="https://wa.me/254748052811" 
+       class="fixed bottom-6 right-6 bg-[#25d366] text-white p-4 rounded-full text-2xl shadow-lg transition duration-300 hover:scale-110" 
+       title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
