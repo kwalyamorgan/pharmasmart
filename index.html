@@ -36,21 +36,14 @@
             }
         }
     </script>
-    <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2k4tF/A3Xw7x6E/f21wK1zH+g2L6I9t2z1t9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2k4tF/A3Xw7x6E/f21wK1zH+g2L6I9t2z1t9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
         /* Offset for sticky nav */
         html {
-            scroll-padding-top: 70px; 
+            scroll-padding-top: 70px;
         }
         /* Style for particle container */
         #particles-hero {
@@ -71,12 +64,15 @@
                 <a href="#" class="text-2xl font-bold text-primary-blue">
                     <i class="fas fa-pills mr-2"></i>PharmaSmart
                 </a>
+                
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-gray-300 hover:text-primary-blue transition duration-300">Features</a>
                     <a href="#screenshots" class="text-gray-300 hover:text-primary-blue transition duration-300">Screenshots</a>
+                    <a href="#documents" class="text-gray-300 hover:text-primary-blue transition duration-300">Docs</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-primary-blue transition duration-300">Reviews</a>
                     <a href="https://wa.me/254748052811" class="text-gray-300 hover:text-primary-blue transition duration-300">Contact</a>
                 </div>
-                 <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe" class="bg-primary-blue text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105">
+                <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe" class="bg-primary-blue text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105">
                     Download
                 </a>
             </div>
@@ -85,7 +81,6 @@
 
     <header class="relative overflow-hidden bg-gradient-to-br from-gray-900 to-dark-bg text-white py-20 px-4 text-center border-b-2 border-primary-blue shadow-lg">
         <div id="particles-hero"></div>
-        
         <div class="container mx-auto relative z-10">
             <h1 class="text-4xl md:text-6xl font-extrabold text-primary-blue leading-tight mb-4 animate-fade-in-down">
                 PharmaSmart
@@ -94,13 +89,12 @@
                 The all-in-one pharmacy management solution for compliance and efficiency.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe" 
-                   class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90" 
-                   download>
+                <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe"
+                   class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">
                     <i class="fas fa-download mr-2"></i> Download App
                 </a>
-                <a href="pharmasmart.pdf" 
-                   class="btn bg-gray-700 text-white px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-600" 
+                <a href="pharmasmart.pdf"
+                   class="btn bg-gray-700 text-white px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-600"
                    download>
                     <i class="far fa-file-alt mr-2"></i> User Manual
                 </a>
@@ -177,32 +171,93 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-12">
                 See PharmaSmart in Action
             </h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div>
-        <img src="./a.jpg" alt="PharmaSmart Login Screen" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">Secure Login Screen</p>
-    </div>
-    <div>
-        <img src="./b.jpg" alt="Inventory Management Dashboard" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">Inventory Management Dashboard</p>
-    </div>
-    <div>
-        <img src="./c.jpg" alt="Sales and Reporting" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">Sales and Reporting</p>
-    </div>
-    <div>
-        <img src="./d.jpg" alt="Admin Control Panel" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">Admin Control Panel</p>
-    </div>
-    <div>
-        <img src="./e.jpg" alt="DDA Register PDF Report" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">DDA Register PDF Report</p>
-    </div>
-    <div>
-        <img src="./f.jpg" alt="Low Stock Alerts" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
-        <p class="mt-4 text-center text-gray-400">Low Stock Alerts</p>
-    </div>
-</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <img src="./a.jpg" alt="PharmaSmart Login Screen" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">Secure Login Screen</p>
+                </div>
+                <div>
+                    <img src="./b.jpg" alt="Inventory Management Dashboard" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">Inventory Management Dashboard</p>
+                </div>
+                <div>
+                    <img src="./c.jpg" alt="Sales and Reporting" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">Sales and Reporting</p>
+                </div>
+                <div>
+                    <img src="./d.jpg" alt="Admin Control Panel" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">Admin Control Panel</p>
+                </div>
+                <div>
+                    <img src="./e.jpg" alt="DDA Register PDF Report" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">DDA Register PDF Report</p>
+                </div>
+                <div>
+                    <img src="./f.jpg" alt="Low Stock Alerts" class="rounded-lg shadow-xl border border-dark-border w-full h-auto transition duration-300 transform hover:scale-105">
+                    <p class="mt-4 text-center text-gray-400">Low Stock Alerts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="documents" class="py-20 px-4 bg-dark-bg">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-12">
+                Official Documentation
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <a href="Software Summary.pdf" download class="bg-dark-card p-6 rounded-xl shadow-lg border border-dark-border flex items-center justify-center space-x-4 transform transition duration-300 hover:shadow-2xl hover:border-primary-blue hover:-translate-y-2">
+                    <i class="fas fa-file-pdf text-3xl text-primary-blue"></i>
+                    <span class="text-xl font-semibold text-white">Software Summary</span>
+                </a>
+                <a href="Data Protection Policy & Audit Trail Documentation.pdf" download class="bg-dark-card p-6 rounded-xl shadow-lg border border-dark-border flex items-center justify-center space-x-4 transform transition duration-300 hover:shadow-2xl hover:border-primary-blue hover:-translate-y-2">
+                    <i class="fas fa-user-shield text-3xl text-primary-blue"></i>
+                    <span class="text-xl font-semibold text-white">Data Protection & Audit</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reviews" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-blue mb-12">
+                What Our Users Say
+            </h2>
+            <div class="text-center text-gray-400 mb-8">
+                <p class="mb-2">We value your feedback! Please share your experience with PharmaSmart.</p>
+                <p>Your reviews help us improve and assist others in making informed decisions.</p>
+            </div>
+            <div id="dynamic-reviews" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                </div>
+    
+            <div class="mt-20 max-w-2xl mx-auto bg-dark-card p-8 rounded-xl shadow-xl border border-dark-border">
+                <h3 class="text-2xl font-bold text-center text-primary-blue mb-6">Write a Review</h3>
+                <form id="review-form" action="https://docs.google.com/forms/d/e/1FAIpQLSccYq0GrdTz-f0SY1Uqgv5Zi9pLJCx67rAA7mVNhED0jPfJqg/formResponse" method="POST" target="hidden_iframe">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-400">Your Name</label>
+                            <input type="text" id="name" name="entry.1872616747" required class="mt-1 block w-full rounded-md bg-dark-bg border-dark-border shadow-sm p-3 text-white focus:ring-primary-blue focus:border-primary-blue">
+                        </div>
+
+                        <div>
+                            <label for="outlet" class="block text-sm font-medium text-gray-400">Outlet Name</label>
+                            <input type="text" id="outlet" name="entry.125359709" required class="mt-1 block w-full rounded-md bg-dark-bg border-dark-border shadow-sm p-3 text-white focus:ring-primary-blue focus:border-primary-blue">
+                        </div>
+
+                        <div>
+                            <label for="review-text" class="block text-sm font-medium text-gray-400">Your Review</label>
+                            <textarea id="review-text" name="entry.2028466667" rows="4" required class="mt-1 block w-full rounded-md bg-dark-bg border-dark-border shadow-sm p-3 text-white focus:ring-primary-blue focus:border-primary-blue"></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="w-full bg-primary-blue text-gray-900 font-bold py-3 px-4 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">
+                            Submit Review
+                        </button>
+
+                    </div>
+                </form>
+
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
 
             </div>
         </div>
@@ -214,9 +269,8 @@
             Download PharmaSmart today and take the first step towards a more efficient and compliant pharmacy.
         </p>
         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe" 
-               class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90" 
-               download>
+            <a href="https://github.com/kwalyamorgan/pharmasmart/releases/download/v1.0/Smart.Pharmacy.Inventory.System.Setup.1.0.0.exe"
+               class="btn bg-primary-blue text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg transform transition duration-300 hover:scale-105 hover:bg-opacity-90">
                 <i class="fas fa-download mr-2"></i> Download App Now
             </a>
         </div>
@@ -226,87 +280,100 @@
         &copy; 2025 PharmaSmart. All rights reserved.
     </footer>
 
-        <a href="https://wa.me/254748052811" 
-   class="fixed bottom-6 right-6 bg-[#25d366] p-4 rounded-full shadow-lg transition duration-300 hover:scale-110" 
-   title="Chat with us on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-        <path d="M20.52 3.48A11.92 11.92 0 0012 .05C5.48.05.05 5.48.05 12c0 2.12.55 4.18 1.6 6.02L0 24l6.18-1.61A11.92 11.92 0 0012 24c6.52 0 11.95-5.43 11.95-12 0-3.2-1.24-6.19-3.43-8.52zM12 21.7c-2.1 0-4.08-.63-5.71-1.7l-.41-.25-3.65.95.98-3.55-.27-.43A9.71 9.71 0 012.3 12C2.3 6.47 6.47 2.3 12 2.3c5.53 0 9.7 4.17 9.7 9.7 0 5.53-4.17 9.7-9.7 9.7zm5.3-7.92c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.64.15-.19.29-.73.95-.9 1.15-.16.19-.32.21-.61.07-.29-.15-1.21-.45-2.3-1.42-.85-.76-1.42-1.7-1.59-1.99-.16-.29-.02-.45.13-.59.14-.14.29-.32.44-.48.15-.16.19-.27.29-.45.1-.19.05-.35-.03-.5-.08-.15-.64-1.53-.88-2.1-.23-.55-.47-.48-.64-.49-.16-.01-.35-.01-.54-.01s-.5.07-.76.35c-.26.28-1 1-1 2.43s1.03 2.82 1.18 3.01c.15.19 2.04 3.12 4.95 4.38 2.9 1.26 2.9.84 3.43.78.53-.06 1.72-.7 1.96-1.37.23-.67.23-1.25.16-1.37-.07-.12-.26-.19-.55-.34z"/>
-    </svg>
-</a>
-
-
+    <a href="https://wa.me/254748052811"
+        class="fixed bottom-6 right-6 bg-[#25d366] p-4 rounded-full shadow-lg transition duration-300 hover:scale-110"
+        title="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M20.52 3.48A11.92 11.92 0 0012 .05C5.48.05.05 5.48.05 12c0 2.12.55 4.18 1.6 6.02L0 24l6.18-1.61A11.92 11.92 0 0012 24c6.52 0 11.95-5.43 11.95-12 0-3.2-1.24-6.19-3.43-8.52zM12 21.7c-2.1 0-4.08-.63-5.71-1.7l-.41-.25-3.65.95.98-3.55-.27-.43A9.71 9.71 0 012.3 12C2.3 6.47 6.47 2.3 12 2.3c5.53 0 9.7 4.17 9.7 9.7 0 5.53-4.17 9.7-9.7 9.7zm5.3-7.92c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.64.15-.19.29-.73.95-.9 1.15-.16.19-.32.21-.61.07-.29-.15-1.21-.45-2.3-1.42-.85-.76-1.42-1.7-1.59-1.99-.16-.29-.02-.45.13-.59.14-.14.29-.32.44-.48.15-.16.19-.27.29-.45.1-.19.05-.35-.03-.5-.08-.15-.64-1.53-.88-2.1-.23-.55-.47-.48-.64-.49-.16-.01-.35-.01-.54-.01s-.5.07-.76.35c-.26.28-1 1-1 2.43s1.03 2.82 1.18 3.01c.15.19 2.04 3.12 4.95 4.38 2.9 1.26 2.9.84 3.43.78.53-.06 1.72-.7 1.96-1.37.23-.67.23-1.25.16-1.37-.07-.12-.26-.19-.55-.34z"/>
+        </svg>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Initialize tsParticles
             tsParticles.load("particles-hero", {
-                background: {
-                    color: {
-                        value: 'transparent'
-                    }
-                },
+                background: { color: { value: 'transparent' } },
                 fpsLimit: 60,
                 interactivity: {
-                    events: {
-                        onHover: {
-                            enable: true,
-                            mode: "repulse"
-                        },
-                        resize: true
-                    },
-                    modes: {
-                        repulse: {
-                            distance: 100,
-                            duration: 0.4
-                        }
-                    }
+                    events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                    modes: { repulse: { distance: 100, duration: 0.4 } }
                 },
                 particles: {
-                    color: {
-                        value: "#00d4ff"
-                    },
-                    links: {
-                        color: "#00d4ff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.2,
-                        width: 1
-                    },
-                    collisions: {
-                        enable: false
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: {
-                            default: "out"
-                        },
-                        random: false,
-                        speed: 2,
-                        straight: false
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800
-                        },
-                        value: 80
-                    },
-                    opacity: {
-                        value: 0.3
-                    },
-                    shape: {
-                        type: "circle"
-                    },
-                    size: {
-                        value: { min: 1, max: 5 }
-                    }
+                    color: { value: "#00d4ff" },
+                    links: { color: "#00d4ff", distance: 150, enable: true, opacity: 0.2, width: 1 },
+                    collisions: { enable: false },
+                    move: { direction: "none", enable: true, outModes: { default: "out" }, random: false, speed: 2, straight: false },
+                    number: { density: { enable: true, area: 800 }, value: 80 },
+                    opacity: { value: 0.3 },
+                    shape: { type: "circle" },
+                    size: { value: { min: 1, max: 5 } }
                 },
                 detectRetina: true
             });
+
+            // Get form elements
+            const form = document.getElementById('review-form');
+
+            // Handle form submission
+            form.addEventListener('submit', (e) => {
+                const name = document.getElementById('name').value.trim();
+                const outlet = document.getElementById('outlet').value.trim();
+                const review = document.getElementById('review-text').value.trim();
+
+                if (!name || !outlet || !review) {
+                    alert('Please fill out all fields.');
+                    e.preventDefault();
+                    return;
+                }
+                
+                // Use an iframe load listener to show success and reset the form
+                const iframe = document.querySelector('iframe[name="hidden_iframe"]');
+                iframe.addEventListener('load', () => {
+                    alert('Thank you for your review!');
+                    form.reset();
+                    loadDynamicReviews(); // Reload reviews after new submission
+                });
+            });
+
+            // Function to load and display reviews from the published CSV
+            function loadDynamicReviews() {
+                const reviewsContainer = document.getElementById('dynamic-reviews');
+                reviewsContainer.innerHTML = ''; // Clear existing reviews
+
+                fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRbfkgwtg-mh5BK0oRWGNwP5rZI3vpcsvIJ3vuw2X2ofoGrdx8LkQUqi_TwR9bfWpiZus7390nhJHWi/pub?output=csv")
+                    .then(response => response.text())
+                    .then(data => {
+                        const rows = data.split("\n").slice(1); // Skip header row
+                        rows.forEach(row => {
+                            const cols = row.split(",").map(c => c.replace(/"/g, '')); // Safely split and remove quotes
+                            
+                            if (cols.length >= 4) {
+                                const name = cols[1].trim();
+                                const outlet = cols[2].trim();
+                                const review = cols[3].trim();
+
+                                if (name && outlet && review) {
+                                    const reviewCard = document.createElement('div');
+                                    reviewCard.className = 'bg-dark-card p-6 rounded-xl shadow-lg border border-dark-border';
+                                    reviewCard.innerHTML = `
+                                        <div class="flex items-center mb-2">
+                                            <span class="font-bold text-lg text-primary-blue">${name}</span>
+                                            <span class="text-sm text-gray-500 ml-2">@ ${outlet}</span>
+                                        </div>
+                                        <p class="text-gray-300">"${review}"</p>
+                                    `;
+                                    reviewsContainer.appendChild(reviewCard);
+                                }
+                            }
+                        });
+                    })
+                    .catch(err => console.error("Error loading reviews:", err));
+            }
+
+            // Initial load of dynamic reviews
+            loadDynamicReviews();
         });
     </script>
-
 </body>
 </html>
